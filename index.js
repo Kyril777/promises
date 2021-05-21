@@ -15,8 +15,8 @@ Source: WebDevSimplified
 //     console.log('This is in the catch ' + message)
 // })
 
-const userLeft = false
-const userWatchingCatMeme = true
+// const userLeft = false
+// const userWatchingCatMeme = true
 
 // function watchTutorialCallback(callback, errorCallback) {
 //   if (userLeft) {
@@ -40,26 +40,26 @@ const userWatchingCatMeme = true
 //   console.log(error.name + ' ' + error.message)
 // })
 
-function watchTutorialCallback() {
-    return new Promise((resolve, reject) => {
-        if (userLeft) {
-            reject({
-              name: 'User Left',
-              message: ':('
-            })
-          } else if (userWatchingCatMeme) {
-            reject({
-              name: 'User Watching Cat Meme',
-              message: 'WebDevSimplified < Cat'
-            })
-          } else {
-           resolve('Thumbs up and Subscribe') 
-          }
-    })
-  }
+// function watchTutorialCallback() {
+//     return new Promise((resolve, reject) => {
+//         if (userLeft) {
+//             reject({
+//               name: 'User Left',
+//               message: ':('
+//             })
+//           } else if (userWatchingCatMeme) {
+//             reject({
+//               name: 'User Watching Cat Meme',
+//               message: 'WebDevSimplified < Cat'
+//             })
+//           } else {
+//            resolve('Thumbs up and Subscribe') 
+//           }
+//     })
+//   }
 
-  watchTutorialCallback().then((message) => {
-    console.log('Success: ' + message)
-  }).catch((error) => {
-    console.log(error.name + ' ' + error.message)
-  })
+//   watchTutorialCallback().then((message) => {
+//     console.log('Success: ' + message)
+//   }).catch((error) => {
+//     console.log(error.name + ' ' + error.message)
+//   })
